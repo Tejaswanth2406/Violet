@@ -18,8 +18,8 @@ from pydantic import BaseModel, Field
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "violet"))
 
-from core.engine import CognitivePhysicsEngine, CPEQueryResult
-from fields.cognitive_fields import FieldType
+from violet.core.engine import CognitivePhysicsEngine, CPEQueryResult
+from violet.fields.cognitive_fields import FieldType
 
 logger = logging.getLogger(__name__)
 

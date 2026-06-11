@@ -33,10 +33,10 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, COGNITIVE_PLANCK, G_COGNITIVE, CognitiveDimension
 )
-from particles.cognitive_particles import CognitiveParticle, DimensionalVector
+from violet.particles.cognitive_particles import CognitiveParticle, DimensionalVector
 
 
 class ManifoldTopology(Enum):

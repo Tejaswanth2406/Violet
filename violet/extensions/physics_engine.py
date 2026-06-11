@@ -18,12 +18,12 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     ALPHA_PRIME, GAMMA_DECAY, G_COGNITIVE, WORMHOLE_THRESHOLD,
     N_DIMENSIONS, COGNITIVE_PLANCK, CognitiveDimension
 )
-from particles.cognitive_particles import CognitiveParticle, DimensionalVector
-from strings.context_strings import ContextString, StringNetwork
+from violet.particles.cognitive_particles import CognitiveParticle, DimensionalVector
+from violet.strings.context_strings import ContextString, StringNetwork
 
 
 # ══════════════════════════════════════════════════════════════

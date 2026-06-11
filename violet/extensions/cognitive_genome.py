@@ -36,11 +36,11 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     MU_MUTATION, N_DIMENSIONS, COGNITIVE_PLANCK,
     CognitiveDimension, ALPHA_PRIME
 )
-from particles.cognitive_particles import DimensionalVector
+from violet.particles.cognitive_particles import DimensionalVector
 
 
 class GeneType(Enum):

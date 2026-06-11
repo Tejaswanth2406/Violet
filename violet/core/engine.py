@@ -28,25 +28,25 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, CognitiveDimension, COLLAPSE_CERTAINTY,
     WORMHOLE_THRESHOLD
 )
-from particles.cognitive_particles import (
+from violet.particles.cognitive_particles import (
     CognitiveParticle, Memoryon, Evidon, Hypotheon, Reasonon, Emergon,
     DimensionalVector, ParticleType, QuantumState
 )
-from strings.context_strings import ContextString, StringNetwork, StringTopology
-from fields.cognitive_fields import (
+from violet.strings.context_strings import ContextString, StringNetwork, StringTopology
+from violet.fields.cognitive_fields import (
     UniversalCognitiveField, FieldType, MemoryField
 )
-from branes.cognitive_branes import (
+from violet.branes.cognitive_branes import (
     BraneNetwork, BraneType, CognitiveBrane,
     ResearchBrane, MemoryBrane, SimulationBrane, ExecutionBrane, SocialBrane
 )
-from ecosystem.cognitive_ecosystem import CognitiveEcosystem
-from curiosity.curiosity_engine import CuriosityEngine, CuriosityImpulse
-from simulation.reality_simulator import RealitySimulator, SimulationResult
+from violet.ecosystem.cognitive_ecosystem import CognitiveEcosystem
+from violet.curiosity.curiosity_engine import CuriosityEngine, CuriosityImpulse
+from violet.simulation.reality_simulator import RealitySimulator, SimulationResult
 
 logger = logging.getLogger(__name__)
 

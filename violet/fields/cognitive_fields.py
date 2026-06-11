@@ -26,12 +26,12 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     G_COGNITIVE, LAMBDA_CURIOSITY, H_COGNITIVE,
     N_DIMENSIONS, GAMMA_DECAY, COGNITIVE_PLANCK,
     CognitiveDimension
 )
-from particles.cognitive_particles import CognitiveParticle, DimensionalVector
+from violet.particles.cognitive_particles import CognitiveParticle, DimensionalVector
 
 
 class FieldType(Enum):
@@ -146,7 +146,7 @@ class CognitiveField(ABC):
         self.last_update = time.time()
 
     def get_active_particles(self) -> List[CognitiveParticle]:
-        from particles.cognitive_particles import QuantumState
+        from violet.particles.cognitive_particles import QuantumState
         return [p for p in self.particles.values()
                 if p.quantum_state != QuantumState.EXTINCT]
 
@@ -173,7 +173,7 @@ class MemoryField(CognitiveField):
 
     def consolidate_recent(self) -> None:
         """Consolidate recently activated memories."""
-        from particles.cognitive_particles import Memoryon
+        from violet.particles.cognitive_particles import Memoryon
         for pid in self.consolidation_queue:
             if pid in self.particles:
                 p = self.particles[pid]
@@ -261,7 +261,7 @@ class ReasoningField(CognitiveField):
 
     def resonate(self, query_vector: DimensionalVector,
                  top_k: int = 10) -> List[Tuple[CognitiveParticle, float]]:
-        from particles.cognitive_particles import Reasonon
+        from violet.particles.cognitive_particles import Reasonon
         scores = []
         for particle in self.get_active_particles():
             if isinstance(particle, Reasonon):
@@ -278,7 +278,7 @@ class ReasoningField(CognitiveField):
         Build inference chain from start to goal.
         Returns ordered list of particle IDs.
         """
-        from particles.cognitive_particles import Reasonon
+        from violet.particles.cognitive_particles import Reasonon
         chain = [start_id]
         current = start_id
         visited = {start_id}

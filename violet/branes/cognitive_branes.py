@@ -24,15 +24,15 @@ from typing import Any, Dict, List, Optional, Set, Callable, Awaitable
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     MAX_BRANE_DEPTH, K_CARRYING, COGNITIVE_PLANCK,
     N_DIMENSIONS, CognitiveDimension
 )
-from particles.cognitive_particles import (
+from violet.particles.cognitive_particles import (
     CognitiveParticle, Memoryon, Evidon, Hypotheon, Reasonon, Emergon
 )
-from fields.cognitive_fields import UniversalCognitiveField, FieldType
-from strings.context_strings import ContextString, StringNetwork, StringTopology
+from violet.fields.cognitive_fields import UniversalCognitiveField, FieldType
+from violet.strings.context_strings import ContextString, StringNetwork, StringTopology
 
 
 class BraneType(Enum):
@@ -141,7 +141,7 @@ class CognitiveBrane(ABC):
         return self.health
 
     def get_active_particles(self, limit: int = 100) -> List[CognitiveParticle]:
-        from particles.cognitive_particles import QuantumState
+        from violet.particles.cognitive_particles import QuantumState
         active = [p for p in self.particles.values()
                   if p.quantum_state != QuantumState.EXTINCT]
         return sorted(active, key=lambda p: p.energy, reverse=True)[:limit]

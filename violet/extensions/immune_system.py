@@ -34,10 +34,10 @@ from typing import Any, Callable, Dict, List, Optional, Set, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, COGNITIVE_PLANCK, CognitiveDimension
 )
-from particles.cognitive_particles import (
+from violet.particles.cognitive_particles import (
     CognitiveParticle, DimensionalVector, QuantumState
 )
 

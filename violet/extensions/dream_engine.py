@@ -33,14 +33,14 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, COGNITIVE_PLANCK, GAMMA_DECAY,
     WORMHOLE_THRESHOLD, CognitiveDimension
 )
-from particles.cognitive_particles import (
+from violet.particles.cognitive_particles import (
     CognitiveParticle, Hypotheon, Emergon, DimensionalVector, QuantumState
 )
-from strings.context_strings import ContextString, StringTopology
+from violet.strings.context_strings import ContextString, StringTopology
 
 
 class DreamStage(Enum):

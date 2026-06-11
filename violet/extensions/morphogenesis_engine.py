@@ -32,11 +32,11 @@ from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, COGNITIVE_PLANCK, GAMMA_DECAY,
     G_COGNITIVE, CognitiveDimension
 )
-from particles.cognitive_particles import DimensionalVector
+from violet.particles.cognitive_particles import DimensionalVector
 
 
 class GrowthPattern(Enum):

@@ -20,11 +20,11 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     ALPHA_PRIME, GAMMA_DECAY, WORMHOLE_THRESHOLD,
     E_THRESHOLD, E_FUSION, N_DIMENSIONS, COGNITIVE_PLANCK
 )
-from particles.cognitive_particles import CognitiveParticle, DimensionalVector
+from violet.particles.cognitive_particles import CognitiveParticle, DimensionalVector
 
 
 class StringTopology(Enum):

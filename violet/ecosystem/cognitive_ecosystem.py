@@ -25,11 +25,11 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     MU_MUTATION, K_CARRYING, GAMMA_DECAY,
     COGNITIVE_PLANCK, N_DIMENSIONS, CognitiveDimension
 )
-from particles.cognitive_particles import (
+from violet.particles.cognitive_particles import (
     CognitiveParticle, ParticleLineage, DimensionalVector,
     Memoryon, Evidon, Hypotheon, Reasonon, Emergon, QuantumState
 )

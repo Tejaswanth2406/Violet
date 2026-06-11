@@ -17,7 +17,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-from core.constants import (
+from violet.core.constants import (
     N_DIMENSIONS, GAMMA_DECAY, TAU_MEMORY,
     COGNITIVE_PLANCK, CognitiveDimension
 )
