@@ -1,3 +1,5 @@
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/f721ae17-3b5d-4b95-a6b2-4fc4eef9ccf6" />
+
 # 🟣 Violet — Cognitive Physics Engine
 
 > *Knowledge is not stored. It resonates.*
