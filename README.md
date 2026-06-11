@@ -1,4 +1,4 @@
-<img width="519" height="301" alt="image" src="https://github.com/user-attachments/assets/390544a6-9739-48db-8697-0f53ffdda592" />
+<img width="927" height="367" alt="image" src="https://github.com/user-attachments/assets/cbe445f1-750d-48ce-89a1-0bf3dcc71d1e" />
 
 # 🟣 Violet — Cognitive Physics Engine
 
